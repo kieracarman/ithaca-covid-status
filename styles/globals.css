@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 390px) {
+  h1, h2 {
+    margin: 1rem;
+  }
+}
