@@ -18,8 +18,26 @@
   justify-content: center;
 }
 
-.transmission {
+.high {
   color: red;
+  font-size: 144px;
+  font-weight: 900;
+}
+
+.substantial {
+  color: orange;
+  font-size: 144px;
+  font-weight: 900;
+}
+
+.moderate {
+  color: gold;
+  font-size: 144px;
+  font-weight: 900;
+}
+
+.low {
+  color: blue;
   font-size: 144px;
   font-weight: 900;
 }

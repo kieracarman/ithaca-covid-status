@@ -16,14 +16,19 @@ export default function Home() {
       {data ? (
         <div className={styles.data}>
           <h1>Community Transmission</h1>
-          <span className={styles.transmission}>
+          <span className={
+            data.community_transmission >= 100 ? styles.high :
+            data.community_transmission >= 50 && data.community_transmission <= 99 ? styles.substantial :
+            data.community_transmission >= 10 && data.community_transmission <= 49 ? styles.moderate :
+            styles.low
+          }>
             {data.community_transmission}
           </span>
-          <h2>New Cases</h2>
+          <h2>New Cases Today</h2>
           <span className={styles.new}>
             {data.new_cases}
           </span>
-          <h2>Total Cases</h2>
+          <h2>Total All-Time Cases</h2>
           <span className={styles.total}>
             {data.total_cases}
           </span>
